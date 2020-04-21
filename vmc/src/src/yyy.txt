@@ -1,0 +1,7 @@
+//public Static Void main() {
+//    int x = 2;
+//}
+//
+//main (){
+//    int x = 2;
+//}
