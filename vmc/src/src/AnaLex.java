@@ -21,26 +21,6 @@ public class AnaLex {
 
     public static void main(String[] args) {
         String path = "..\\vmc\\src\\src\\" + dir;
-        int i = 0;
-        try {
-            Reader lector = new BufferedReader(new FileReader(path));
-            Yylex lexer = new Yylex(lector);
-            String resultado = "";
-            Ins = new String[300];
-            while (true) {
-                Instruc = lexer.yylex();
-                if (Instruc == null) {
-                    resultado += "Finalizo analizador lexico";
-                    break;
-                }
-                Ins[i] = Instruc.name();
-                i++;
-            }
-        } catch (FileNotFoundException ex) {
-            System.out.println("Error a en analisis lexico ");
-        } catch (IOException ex) {
-            System.out.println("Error b en analisis lexico");
-        }
         try {
             Reader lector = new BufferedReader(new FileReader(path));
             String resultado = "";
