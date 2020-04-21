@@ -1,0 +1,5 @@
+main(){ 
+    int x = 243;  
+    int y = 23; 
+    int z; 
+}
